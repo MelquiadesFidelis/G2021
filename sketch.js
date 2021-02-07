@@ -1,13 +1,20 @@
+function isMobileDevice(){
+  return /Android|iPhone|iPad|iPod|windows Phone/i.test(navigator.userAgent);
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  let fs = fullscreen();
-    fullscreen(!fs);
 }
 
 function draw() {
+  if (isMobileDevice()){
   background(0, 100, 200);
-  let fs = fullscreen();
-    fullscreen(!fs);
+  }
+  else{
+
+    alert("Jogo disponivel apenas para celular");
+
+  }
 }
 
 function windowResized() {
