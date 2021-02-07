@@ -20,7 +20,7 @@ function setup() {
 function draw() {
   
   background(0, 100, 200);
-  
+  touchStart(e)
 }
 
 function windowResized() {
